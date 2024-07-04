@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Gaand fatt gyi isse yaha laane mein 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
