@@ -1,0 +1,41 @@
+/* Hero section */
+.hero {
+    display: flex;
+}
+
+/* Left div */
+.leftbox {
+    float: left;
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: White;
+
+}
+
+
+/* Right div */
+.rightbox {
+        float: right;
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: white;
+        border:#333;
+        padding-top: 10px;
+}
+
+/* Hero title */
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Hero subtitle */
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
