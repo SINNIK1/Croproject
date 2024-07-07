@@ -313,7 +313,7 @@ const StateTable = () => {
                     </tr>
                 ))}
             </tbody>
-        </table>
+        </table>  
     );
 };
 

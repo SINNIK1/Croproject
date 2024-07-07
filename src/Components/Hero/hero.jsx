@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
             <div class = "rightbox">
                 <strong>List of states in India</strong>
-                <StateTable/>
+                <div class = "table" ><StateTable/></div>
             </div>
         </div>
     );
