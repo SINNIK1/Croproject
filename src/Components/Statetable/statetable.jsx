@@ -292,7 +292,7 @@ const StateTable = () => {
       // Column Definitions: Defines the columns to be displayed.
       const [colDefs, setColDefs] = useState([
         { field: "No"},
-        { field: "State" ,filter: true, floatingFilter: true},
+        { field: "State"},
         { field: "Capital" },
         { field: "Zone" },
         { field: "Population" },
