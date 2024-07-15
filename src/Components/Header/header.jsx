@@ -1,21 +1,53 @@
-import React from 'react';
-import './header.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import About from '../../Navbar/About/about';
+import React, { Component } from 'react'
+import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from "react-router-dom";
 
-function Header() {
-    return (
-        <header className="header">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <Route path="/about" component={About} />
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
+import Home from './Home';
+import Contact from './Contact';
+import About from './About';
+
+export default class NavbarComp extends Component {
+    render() {
+        return (
+            <Router>
+                <div>
+
+                    <Navbar bg="dark" variant={"dark"} expand="lg">
+                        <Navbar.Brand href="#">Navbar Demo Arjun Codes</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll">
+                            <Nav
+                                className="mr-auto my-2 my-lg-0"
+                                style={{ maxHeight: '100px' }}
+                                navbarScroll
+                            >
+                                <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+
+                            </Nav>
+
+                        </Navbar.Collapse>
+                    </Navbar>
+                </div>
+                <div>
+                    
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                    
+                </div>
+            </Router>
+        )
+    }
 }
-
-export default Header;

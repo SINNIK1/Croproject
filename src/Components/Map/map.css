@@ -1,5 +1,6 @@
-.Map{
-    height: 98%;
-    width: 100%;
 
+.VectorMap{
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
   }
