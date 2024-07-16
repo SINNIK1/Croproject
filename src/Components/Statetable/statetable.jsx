@@ -293,11 +293,9 @@ const StateTable = () => {
       const [colDefs, setColDefs] = useState([
         { field: "No"},
         { field: "State"},
-        { field: "Capital" },
         { field: "Zone" },
         { field: "Population" },
         { field: "Area" },
-        { field: "Officiallanguages" },
         { field: "StateCode" }
       ]);
     return (
